@@ -1,8 +1,11 @@
 <?php
+
 //die and debug
-function dd($parametro = []) {
+function dd($parametro = [])
+{
     echo "<pre>";
     print_r($parametro);
-    echo"</pre>";
+    echo "</pre>";
     exit;
-} 
+}
+

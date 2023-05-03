@@ -9,6 +9,7 @@ use PDO;
 //o atributo protected $db e método construtor
 abstract class Model
 {
+
     //Variavel que receberá a conexão com banco de dados
     //que é a instância PDO que pe feita a partir do método getDb 
     //da classe Connection

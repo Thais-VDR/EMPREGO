@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+// a senha tem que estar criptografadas obrigatoriamente.
 
 //os recursos do miniframework
 use Core\Controller\Action;
@@ -10,11 +11,10 @@ class AuthController extends Action
 {
 	public function autenticar()
 	{
-     
-        dd($_POST);
 		$usuario = Container::getModel('Usuario');
 		$usuario->__set('email', $_POST['email']);
 		$usuario->__set('senha', md5($_POST['senha']));
+
 		$usuario->autenticar();
 
 		if ($usuario->__get('id') != '' && $usuario->__get('nome')) {

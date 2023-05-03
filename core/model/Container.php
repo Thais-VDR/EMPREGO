@@ -4,7 +4,6 @@
     //devemos importar a classe Connection
     use App\database\Connection;
 
-    //Classe responsavel por retornar
     class Container {
 
         // Esta método será capaz de retornar o modelo solicitado 

@@ -18,12 +18,13 @@ class Route extends Bootstrap
         //action será a pagina a ser aberta
 
         //Rotas do IndexController
-        $routes['home'] = array('route'=> '/','controller'=> 'indexController','action'=> 'index');
-        $routes['login'] = array('route'=>'/login','controller'=> 'indexController','action'=> 'login');
-        $routes['contato'] = array('route'=> '/contato','controller'=> 'indexController','action'=> 'contato');
+        $routes['home'] = array('route' => '/', 'controller' => 'indexController', 'action'  => 'index');       
+        $routes['login'] = array('route' => '/login', 'controller' =>  'indexController', 'action' => 'login');
+        $routes['contato'] = array('route' => '/contato', 'controller' => 'indexController', 'action' => 'contato');
 
         //Rotas do AuthController
-        $routes['autenticar'] = array('route'=> '/autenticar','controller'=> 'authController','action'=> 'autenticar');
+        $routes['autenticar'] = array('route' => '/autenticar', 
+        'controller' => 'authController', 'action' => 'autenticar');
 
         $this->setRoutes($routes);
     }
